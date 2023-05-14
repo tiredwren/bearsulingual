@@ -90,11 +90,14 @@
                 android:layout_margin="10dp"
                 android:layout_marginTop="240dp"
                 android:background="@drawable/rounded_corners"
+                android:backgroundTint="#f2f5f3"
                 android:text="greetings"
                 android:textAllCaps="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/heading" />
+                app:layout_constraintTop_toBottomOf="@+id/heading"
+                app:strokeColor="#5E503F"
+                app:strokeWidth="3dp" />
 
             <Button
                 android:id="@+id/panda_two"
@@ -107,7 +110,9 @@
                 app:layout_constraintBottom_toTopOf="@+id/panda_three"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/panda_one" />
+                app:layout_constraintTop_toBottomOf="@+id/panda_one"
+                app:strokeColor="#5E503F"
+                app:strokeWidth="3dp" />
 
             <Button
                 android:id="@+id/panda_three"
@@ -119,7 +124,9 @@
                 android:textAllCaps="false"
                 app:layout_constraintBottom_toTopOf="@+id/panda_four"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="#5E503F"
+                app:strokeWidth="3dp" />
 
             <Button
                 android:id="@+id/panda_four"
@@ -131,7 +138,9 @@
                 android:textAllCaps="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/panda_three" />
+                app:layout_constraintTop_toBottomOf="@+id/panda_three"
+                app:strokeColor="#5E503F"
+                app:strokeWidth="3dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

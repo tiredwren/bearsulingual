@@ -30,7 +30,7 @@
                             android:fontFamily="@font/bevan"
                             android:text="level one: communication basics"
                             android:textColor="#f2f3f3"
-                            app:layout_constraintBottom_toTopOf="@+id/panda_one"
+                            app:layout_constraintBottom_toTopOf="@+id/grizzly_one"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="1.0"
                             app:layout_constraintStart_toStartOf="parent" />
@@ -84,55 +84,64 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <Button
-                            android:id="@+id/panda_one"
+                            android:id="@+id/grizzly_one"
                             android:layout_width="410dp"
                             android:layout_height="67dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="240dp"
+                            android:background="@drawable/rounded_corners"
+                            android:backgroundTint="#f2f5f3"
                             android:text="greetings"
                             android:textAllCaps="false"
-                            app:layout_constraintBottom_toTopOf="@+id/panda_two"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" />
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/heading"
+                            app:strokeColor="#5E503F"
+                            app:strokeWidth="3dp" />
 
                         <Button
-                            android:id="@+id/panda_two"
+                            android:id="@+id/grizzly_two"
                             android:layout_width="410dp"
                             android:layout_height="67dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/rounded_corners"
                             android:text="greetings"
                             android:textAllCaps="false"
-                            app:layout_constraintBottom_toTopOf="@+id/panda_three"
+                            app:layout_constraintBottom_toTopOf="@+id/grizzly_three"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" />
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/grizzly_one"
+                            app:strokeColor="#5E503F"
+                            app:strokeWidth="3dp" />
 
                         <Button
-                            android:id="@+id/panda_three"
+                            android:id="@+id/grizzly_three"
                             android:layout_width="410dp"
                             android:layout_height="67dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/rounded_corners"
+                            android:backgroundTint="#f2f4f3"
                             android:text="greetings"
                             android:textAllCaps="false"
-                            app:layout_constraintBottom_toTopOf="@+id/panda_four"
+                            app:layout_constraintBottom_toTopOf="@+id/grizzly_four"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" />
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:strokeColor="#5E503F"
+                            app:strokeWidth="3dp" />
 
                         <Button
-                            android:id="@+id/panda_four"
+                            android:id="@+id/grizzly_four"
                             android:layout_width="410dp"
                             android:layout_height="67dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/rounded_corners"
                             android:text="greetings"
                             android:textAllCaps="false"
-                            app:layout_constraintBottom_toTopOf="@+id/button5"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" />
-
-                        <Button
-                            android:id="@+id/button5"
-                            android:layout_width="410dp"
-                            android:layout_height="67dp"
-                            android:layout_marginBottom="216dp"
-                            android:text="greetings"
-                            android:textAllCaps="false"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" />
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/grizzly_three"
+                            app:strokeColor="#5E503F"
+                            app:strokeWidth="3dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
