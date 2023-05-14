@@ -9,21 +9,33 @@ import android.widget.Button;
 
 public class GrizzlyPage extends AppCompatActivity {
 
-    Button grizzBut;
-    Button polBut;
-    Button panBut;
+    private Button grizzlyButton;
+    private Button polarButton;
+    private Button pandaButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        grizzBut = findViewById(R.id.grizzly);
-        polBut = findViewById(R.id.polar);
-        panBut = findViewById(R.id.panda);
+        grizzlyButton = findViewById(R.id.grizzly);
+        polarButton = findViewById(R.id.polar);
+        pandaButton = findViewById(R.id.panda);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grizzly_page);
 
-        grizzBut.setOnClickListener(new View.OnClickListener() {
+        grizzlyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(GrizzlyPage.this, GrizzlyPage.class));
+            }
+        });
+        grizzlyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(GrizzlyPage.this, GrizzlyPage.class));
+            }
+        });
+        grizzlyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(GrizzlyPage.this, GrizzlyPage.class));
