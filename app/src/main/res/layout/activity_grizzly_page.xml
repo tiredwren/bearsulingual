@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DB8A74"
+    tools:context=".GrizzlyPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginEnd="74dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/bevan"
+                android:text="level one: communication basics"
+                android:textColor="#f2f3f3"
+                app:layout_constraintBottom_toTopOf="@+id/grizzly_one"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/grizzly"
+                android:layout_width="130dp"
+                android:layout_height="82dp"
+                android:layout_marginBottom="37dp"
+                android:backgroundTint="#DB8A74"
+                android:fontFamily="@font/modak"
+                android:text="grizzly"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/heading"
+                app:layout_constraintEnd_toStartOf="@+id/polar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/polar"
+                android:layout_width="130dp"
+                android:layout_height="82dp"
+                android:layout_marginBottom="37dp"
+                android:backgroundTint="#F2F4F3"
+                android:fontFamily="@font/modak"
+                android:text="polar"
+                android:textAllCaps="false"
+                android:textColor="#5E503F"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/heading"
+                app:layout_constraintEnd_toStartOf="@+id/panda"
+                app:layout_constraintStart_toEndOf="@+id/grizzly"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/panda"
+                android:layout_width="130dp"
+                android:layout_height="82dp"
+                android:layout_marginBottom="37dp"
+                android:backgroundTint="#F2F4F3"
+                android:fontFamily="@font/modak"
+                android:text="panda"
+                android:textAllCaps="false"
+                android:textColor="#5E503F"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/heading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/polar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/grizzly_one"
+                android:layout_width="410dp"
+                android:layout_height="67dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="240dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#f2f5f3"
+                android:text="greetings"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/heading"
+                app:strokeColor="#5E503F"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/grizzly_two"
+                android:layout_width="410dp"
+                android:layout_height="67dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_corners"
+                android:text="greetings"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toTopOf="@+id/grizzly_three"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/grizzly_one"
+                app:strokeColor="#5E503F"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/grizzly_three"
+                android:layout_width="410dp"
+                android:layout_height="67dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#f2f4f3"
+                android:text="greetings"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toTopOf="@+id/grizzly_four"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="#5E503F"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/grizzly_four"
+                android:layout_width="410dp"
+                android:layout_height="67dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_corners"
+                android:text="greetings"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/grizzly_three"
+                app:strokeColor="#5E503F"
+                app:strokeWidth="3dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
