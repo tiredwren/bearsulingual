@@ -4,15 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DB8A74"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/grizzly"
+        android:layout_width="130dp"
+        android:layout_height="82dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/modak"
+        android:shadowColor="@color/coral"
+        android:text="grizzly"
+        android:textAllCaps="false"
+        android:textColor="#5E503F"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/polar"
+        android:layout_width="130dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="140dp"
+        android:backgroundTint="#F2F4F3"
+        android:fontFamily="@font/modak"
+        android:shadowColor="@color/coral"
+        android:text="polar"
+        android:textAllCaps="false"
+        android:textColor="#5E503F"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/panda"
+        android:layout_width="130dp"
+        android:layout_height="82dp"
+        android:backgroundTint="#F2F4F3"
+        android:fontFamily="@font/modak"
+        android:shadowColor="@color/coral"
+        android:text="panda"
+        android:textAllCaps="false"
+        android:textColor="#5E503F"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:fontFamily="@font/changa_one"
+        android:text="level one: communication basics"
+        android:textColor="#f2f3f3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grizzly" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="166dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

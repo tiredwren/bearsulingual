@@ -12,10 +12,22 @@
         android:theme="@style/Theme.BeURSAlingual"
         tools:targetApi="31">
         <activity
+            android:name=".CustomLayout"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
             android:name=".PolarPage"
             android:exported="false" />
         <activity
             android:name=".PandaPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".GrizzlyPage"
