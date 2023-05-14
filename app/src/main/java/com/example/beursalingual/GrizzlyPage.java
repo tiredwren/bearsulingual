@@ -29,16 +29,16 @@ public class GrizzlyPage extends AppCompatActivity {
                 startActivity(new Intent(GrizzlyPage.this, GrizzlyPage.class));
             }
         });
-        grizzlyButton.setOnClickListener(new View.OnClickListener() {
+        polarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GrizzlyPage.this, GrizzlyPage.class));
+                startActivity(new Intent(GrizzlyPage.this, PolarPage.class));
             }
         });
-        grizzlyButton.setOnClickListener(new View.OnClickListener() {
+        pandaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GrizzlyPage.this, GrizzlyPage.class));
+                startActivity(new Intent(GrizzlyPage.this, PandaPage.class));
             }
         });
     }
