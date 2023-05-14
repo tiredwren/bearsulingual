@@ -2,42 +2,44 @@ package com.example.beursalingual;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
+import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-
-import java.util.Locale;
 
 public class GrizzlyPage extends AppCompatActivity {
+
+    private Button grizzlyButton;
+    private Button polarButton;
+    private Button pandaButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        Button buttonGenerateSpeech;
-        EditText editText;
-        TextToSpeech t1;
+        grizzlyButton = findViewById(R.id.grizzly);
+        polarButton = findViewById(R.id.polar);
+        pandaButton = findViewById(R.id.panda);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grizzly_page);
-        t1 = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+
+        grizzlyButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onInit(int i) {
-                if (i != TextToSpeech.ERROR)
-                    t1.setLanguage(Locale.CANADA);
+            public void onClick(View v) {
+                startActivity(new Intent(GrizzlyPage.this, GrizzlyPage.class));
             }
         });
-
-        buttonGenerateSpeech = findViewById()
-
-        // (n) = number
-        // (t): grizzly=1, polar=2, panda=3
-        // each (grizzly, polar, panda) have five sections in them rn (can add more later)
-
-        // if button(n) is pressed, go to a page and open data from column (t*n)
-        // list input boxes out in a recyclerview, with a play button on the left side
-        // (r) = number in recyclerview
-        // when button is pressed, text-to-speech speaking out word in column (t*n), row (r)
-        // does user input match what is written in column (t*n)?
+        polarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(GrizzlyPage.this, PolarPage.class));
+            }
+        });
+        pandaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(GrizzlyPage.this, PandaPage.class));
+            }
+        });
     }
 }

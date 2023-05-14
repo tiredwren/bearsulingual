@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "519349160651",
+    "project_id": "beursalingual",
+    "storage_bucket": "beursalingual.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519349160651:android:ef453245bc12a1a0aea94e",
+        "android_client_info": {
+          "package_name": "com.example.beursalingual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519349160651-0ltib9shve40fm2h8g2o844ut533kfcp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPql2PCk6T3xdvwycXLtoQ-dZTs_Y2RIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519349160651-0ltib9shve40fm2h8g2o844ut533kfcp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

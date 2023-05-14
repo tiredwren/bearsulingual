@@ -12,26 +12,26 @@
         android:theme="@style/Theme.BeURSAlingual"
         tools:targetApi="31">
         <activity
-            android:name=".PandaPage"
+            android:name=".PolarPage"
             android:exported="false" />
         <activity
-            android:name=".PolarBearPage"
+            android:name=".PandaPage"
             android:exported="false" />
         <activity
             android:name=".GrizzlyPage"
             android:exported="false" />
         <activity
-            android:name=".HomePage"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".RegisterActivity"
+            android:exported="false" />
         <activity
             android:name=".LoginPage"
-            android:exported="false" />
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

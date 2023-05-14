@@ -26,11 +26,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="74dp"
                 android:layout_marginEnd="74dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="220dp"
                 android:fontFamily="@font/bevan"
                 android:text="level one: communication basics"
                 android:textColor="#f2f3f3"
-                app:layout_constraintBottom_toTopOf="@+id/polar_one"
+                app:layout_constraintBottom_toTopOf="@+id/panda_one"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -56,11 +56,11 @@
                 android:layout_width="130dp"
                 android:layout_height="82dp"
                 android:layout_marginBottom="37dp"
-                android:backgroundTint="#DB8A74"
+                android:backgroundTint="#F2F4F3"
                 android:fontFamily="@font/modak"
                 android:text="polar"
                 android:textAllCaps="false"
-                android:textColor="#fff"
+                android:textColor="#5E503F"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/heading"
                 app:layout_constraintEnd_toStartOf="@+id/panda"
@@ -72,11 +72,11 @@
                 android:layout_width="130dp"
                 android:layout_height="82dp"
                 android:layout_marginBottom="37dp"
-                android:backgroundTint="#F2F4F3"
+                android:backgroundTint="#DB8A74"
                 android:fontFamily="@font/modak"
                 android:text="panda"
                 android:textAllCaps="false"
-                android:textColor="#5E503F"
+                android:textColor="#fff"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/heading"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +84,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/polar_one"
+                android:id="@+id/panda_one"
                 android:layout_width="410dp"
                 android:layout_height="67dp"
                 android:layout_margin="10dp"
@@ -100,36 +100,36 @@
                 app:strokeWidth="3dp" />
 
             <Button
-                android:id="@+id/polar_two"
+                android:id="@+id/panda_two"
                 android:layout_width="410dp"
                 android:layout_height="67dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/rounded_corners"
                 android:text="greetings"
                 android:textAllCaps="false"
-                app:layout_constraintBottom_toTopOf="@+id/polar_three"
+                app:layout_constraintBottom_toTopOf="@+id/panda_three"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/polar_one"
+                app:layout_constraintTop_toBottomOf="@+id/panda_one"
                 app:strokeColor="#5E503F"
                 app:strokeWidth="3dp" />
 
             <Button
-                android:id="@+id/polar_three"
+                android:id="@+id/panda_three"
                 android:layout_width="410dp"
                 android:layout_height="67dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/rounded_corners"
                 android:text="greetings"
                 android:textAllCaps="false"
-                app:layout_constraintBottom_toTopOf="@+id/polar_four"
+                app:layout_constraintBottom_toTopOf="@+id/panda_four"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:strokeColor="#5E503F"
                 app:strokeWidth="3dp" />
 
             <Button
-                android:id="@+id/polar_four"
+                android:id="@+id/panda_four"
                 android:layout_width="410dp"
                 android:layout_height="67dp"
                 android:layout_margin="10dp"
@@ -138,7 +138,7 @@
                 android:textAllCaps="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/polar_three"
+                app:layout_constraintTop_toBottomOf="@+id/panda_three"
                 app:strokeColor="#5E503F"
                 app:strokeWidth="3dp" />
 
